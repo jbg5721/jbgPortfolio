@@ -1,1 +1,9 @@
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 title: Joey Gardiners Portfolio
+name: Joey Gardiner
+description: Digital portfolio for projects
+timezone: America/New_York
