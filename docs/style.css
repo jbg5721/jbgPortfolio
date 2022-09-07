@@ -108,7 +108,16 @@ div.desc {
 }
 /* Gallery End */
 
-img#Avatar { width:500px; height:500px; margin:25px 25px 0px 0px; float:left;}
+img#Avatar { 
+    width:500px; 
+    height:500px; 
+     
+    /*float:left;*/
+}
+div.img {
+    float:left;
+    margin:25px 25px 0px 0px;
+}
 
 div.tex {margin:25px 25px 0px 0px;}
 
@@ -185,3 +194,12 @@ div.capsule {
     display:flex;
 }
 
+/* FOOTER */
+footer {
+    width: 100%
+}
+.foot {
+    text-align:left;
+    font-size: 17px; 
+    text-indent: 0px;
+}
