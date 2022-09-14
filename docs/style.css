@@ -79,7 +79,7 @@ li {
     font-size: 19px;
 }
 
-/* Gallery Start */
+/*  Old Gallery Start
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -106,7 +106,36 @@ div.desc {
   display: table;
   clear: both;
 }
-/* Gallery End */
+ Old Gallery Finish */
+ 
+ /* New Gallery Start */
+.image-gallery {
+    overflow: auto; 
+    margin-left: -1%!important;
+}
+.image-gallery a {
+    margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 320px;
+    text-align: center; 
+    text-decoration: none!important;
+}
+.image-gallery a span {
+    display: block; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    padding: 3px 0;
+}
+.image-gallery a img {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+
+/* New Gallery End */
 
 img#Avatar { 
     width:500px; 
