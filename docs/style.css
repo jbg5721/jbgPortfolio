@@ -67,10 +67,7 @@ h1 {color: #fff; font-size: 3em;}
 h2 {color: #1b4166; font-size: 25px;}
 h3 {color: #1b4166}
 
-div.header {
-    background-color:#1b4166;
-    padding:20px
-}
+
 
 p {
   font-size: 19px; text-indent: 50px;
@@ -180,17 +177,26 @@ flex-flow: wrap;
 }
 /* lightbox end */
 
+/* header start */
+
+div.header {
+    background-color:#1b4166;
+    padding:20px;
+    display: flex;
+    justify-content: left;
+}
 img#Avatar { 
-    width:500px; 
-    height:500px; 
+    max-width: 100% 
      
     /*float:left;*/
 }
 div.img {
-    float:left;
-    margin:25px 25px 0px 0px;
+flex-basis: 15%
 }
-
+div.title {
+    padding-left:20px;
+}
+/* header end  */
 div.tex {margin:25px 25px 0px 0px;}
 
 iframe {

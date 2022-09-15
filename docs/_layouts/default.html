@@ -11,7 +11,12 @@
     <body>
         {% include nav.html %}
         <div class="header" >
-            <h1>{{ page.title }}</h1>
+            <div class="img">
+                <img id = "Avatar" src="images/EchO1.jpg" alt="Over Under"/>
+            </div>
+            <div class="title">
+                <h1>{{ page.title }}</h1>
+            </div>
         </div> 
         
         {{ content }}
