@@ -1,6 +1,6 @@
 
 body {
-background-color: #e8fbff;
+background-color: #EDE7E3;
 /*background-image: linear-gradient( #daedf1, #e8fbff);*/
 color: #1b4166;
 font-family: arial, helvetica, sans-serif; 
@@ -32,13 +32,19 @@ a:active {
 }/* Link End */
 
 /* Menu start */
+div.rightSide {
+    display: flex;
+    /*justify-content: left;*/
+    /*float:right;*/
+    /*margin-left: 3vw;*/
+}
 div.nav {
-    overflow: hidden;
+    /*overflow: hidden;*/
     position:absolute;
-    right:40px;
+    right: 30px;
 }
 .nav a {
-  float: left;
+  /*float: left;*/
   font-size: 16px;
   color: white;
   text-align: center;
@@ -46,7 +52,7 @@ div.nav {
   text-decoration: none;
 }
 .nav a:hover, .dropdown:hover .dropbtn {
-  background-color: #007ef5;
+  background-color: #FFA62B;
 }
 ul.Menu {
 list-style-type: lower-alpha;
@@ -84,11 +90,12 @@ li {
 }
 .dropdown-content {
   display: none;
-
+  position: absolute;
   background-color: #f9f9f9;
   min-width: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  right:0;
 }
 
 .dropdown-content a {
@@ -108,7 +115,8 @@ li {
   display: block;
 }
 .dropdown {
-  
+position: relative;
+  display: inline-block;
 }
 
 .dropdown .dropbtn {
@@ -124,14 +132,22 @@ li {
 }
 /* Menu End*/
 
-h1 {color: #fff; font-size: 4vw;}
+h1 {
+    color: #fff; 
+    font-size: 4vw;
+    /*margin-top:65px;*/
+    
+}
 h2 {color: #1b4166; font-size: 3vw;}
 h3 {color: #1b4166}
 
 
 
-p {
+.tab {
   font-size: 19px; text-indent: 50px;
+}
+p {
+    font-size:19px;
 }
 
 /*  Old Gallery Start
@@ -225,23 +241,28 @@ div.desc {
 .lightbox:target {
     /** Remove default browser outline */
     outline: none;
-
     width: 100%;
     height: 100%;
     opacity: 1 !important;
-display:flex;
-justify-content:center;
-flex-flow: wrap;
+    display:flex;
+    justify-content:center;
+    flex-flow: wrap;
 }
 /* lightbox end */
 
 /* header start */
 
 div.header {
-    background-color:#1b4166;
+    background-color:#1B4166;
     padding:20px;
     display: flex;
+    
+}
+div.leftSide {
+    
+    display: flex;
     justify-content: left;
+    
 }
 img#Avatar { 
     width: 20vw;
@@ -252,6 +273,7 @@ img#Avatar {
 
 div.title {
     padding-left:20px;
+    margin-top:65px;
 }
 /* header end  */
 div.tex {margin:25px 10vw 25px 10vw;}
@@ -262,10 +284,10 @@ iframe.video {
     
     width:60vw;
     height:50vh;
-    background-color: #1b4166;
+    background-color: #1B4166;
     padding: 1em; 
     border-radius: 20px;
-    
+    flex-wrap: wrap;
 }
 iframe.website {
     text-align:center;
@@ -278,7 +300,7 @@ iframe.website {
 
 /* display div start */
 
-div.displayR {
+/*div.displayR {
     float:right;
     text-align:right;
     margin-top:3rem;
@@ -286,9 +308,9 @@ div.displayR {
     margin-left:auto;
     margin-right:auto;
     width: 65%;
-
-}
-div.displayl {
+    flex-wrap: wrap;
+}*/
+/*div.displayl {
     float:left;
     text-align:left;
     margin-top:3rem;
@@ -296,25 +318,43 @@ div.displayl {
     margin-left:auto;
     margin-right:auto;
     width: 30%;
-
-}
-div.disTex {
+    flex-wrap: wrap;
+}*/
+/*div.disTex {
     float:left;
-    background-color: #e8ecef;
+    background-color: #63C7B2;
     padding: 1em; 
     border-radius: 20px;
-    width: 25%;
+    width: 25vw;
     margin-top:3rem;
     margin-bottom:3rem;
     margin-left:auto;
     margin-right:auto;
     display:flex;
+    flex-wrap: wrap;
+    
+    
+}*/
+p.disTex {
+    float:left;
+    background-color: #82C0CC;
+    padding: 1em; 
+    border-radius: 20px;
+    width: 25vw;
+    margin-top:3rem;
+    margin-bottom:3rem;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap: wrap;
+    /*word-break: break-all;*/
+    
 }
 div.disTexL {
     float:left;
     /*display:flex;*/
     text-align:center;
-    background-color: #e8ecef;
+    background-color: #82C0CC;
     padding: 1em; 
     border-radius: 20px;
     width: 45%;
@@ -322,13 +362,13 @@ div.disTexL {
     margin-bottom:3rem;
     margin-left:auto;
     margin-right:auto;
-
+    flex-wrap: wrap;
 }
 div.disTexR {
     float:right;
     /*display:flex;*/
     text-align:center;
-    background-color: #e8ecef;
+    background-color: #82C0CC;
     padding: 1em; 
     border-radius: 20px;
     width: 45%;
@@ -336,11 +376,12 @@ div.disTexR {
     margin-bottom:3rem;
     margin-left:auto;
     margin-right:auto;
-
+    flex-wrap: wrap;
 }
 div.capsule {
     justify-content: space-around;
     display:flex;
+    flex-wrap: wrap;
 }
 
 /* FOOTER */
@@ -365,6 +406,6 @@ span.foot {
 }
 .button {
     font-size: 19px;
-    
+    background-color:#FFA62B;
 }
 

@@ -12,15 +12,19 @@
         
         <div class="header" >
             
-            <div class="img">
-                <img id = "Avatar" src="images/EchO1.jpg" alt="Over Under"/>
-            </div>
+            <div class="leftSide">
+                <div class="img">
+                    <img id = "Avatar" src="images/EchO1.jpg" alt="Over Under"/>
+                </div>
            
-            <div class="title">
-                <h1>{{ page.title }}</h1>
+                <div class="title">
+                     <h1>{{ page.title }}</h1>
+                 </div>
             </div>
-             <div class="nav">
-                {% include nav.html %}
+            <div class="rightSide">
+                <div class="nav">
+                    {% include nav.html %}
+                </div>
             </div>
         </div> 
         <div class="content">
