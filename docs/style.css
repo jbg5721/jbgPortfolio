@@ -408,4 +408,19 @@ span.foot {
     font-size: 19px;
     background-color:#FFA62B;
 }
+/* collage images */
+.collage {
+    width: 30vw;
+}
+.col{
+    text-align: center;
+    padding-top:20px;
+}
+.frontP {
+    text-align:center;
+    border: none; 
+    width:90%;
+    height:35vh;
+    padding-top:20px;
+}
 
